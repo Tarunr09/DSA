@@ -85,13 +85,13 @@ public class o2 {
 
         Scanner sc = new Scanner(System.in);
 
-        // Taking input for each trainee's oxygen levels
+        // Taking input
         for(int i = 0; i < n; i++) {
-            System.out.println("Enter o2 lvl of round " + (i + 1) );
+            System.out.println("Enter o2 lvl of round: " + (i + 1) );
             for(int j = 0; j < m; j++) {
                 int oxygenLevel;
                 do {
-                    System.out.print("Enter oxygen level for trainee " + (j + 1) + ": ");
+                    System.out.print("Enter oxygen level for trainee: " + (j + 1) + ": ");
                     oxygenLevel = sc.nextInt();
                 } while (oxygenLevel < 1 || oxygenLevel > 100); 
                 marks[i][j] = oxygenLevel; 
